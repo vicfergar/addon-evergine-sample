@@ -3,6 +3,7 @@
   "version": "dev",
   "slug": "wave-engine-sample",
   "description": "Sample add-on that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview",
+  "url": "https://github.com/vicfergar/addon-wave-sample",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "ingress": true,
   "ingress_port": 1337,

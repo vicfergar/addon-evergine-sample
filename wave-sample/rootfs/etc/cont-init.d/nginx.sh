@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Home Assistant Community Add-on: Wave Sample
+# Home Assistant Community Add-on: Wave Engine Sample
 # Configures NGINX
 # ==============================================================================
 declare port
