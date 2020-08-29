@@ -13,13 +13,15 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-Sample add-on that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview
+Sample add-on that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview.
 
 ## About
 
 This add-on is sample that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview.
 
 It is designed to be used as a startup structure for Add-ons based on [Wave Engine](https://waveengine.net/).
+
+Using Wave Engine brings the possibility of developing web graphics apps integrated within Home Assistant.
 
 
 [:books: Read the full add-on documentation][docs]
