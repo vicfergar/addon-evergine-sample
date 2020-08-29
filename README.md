@@ -23,8 +23,16 @@ It is designed to be used as a startup structure for Add-ons based on [Wave Engi
 
 Using Wave Engine brings the possibility of developing web graphics apps integrated within Home Assistant.
 
+This add-on is using Ingress to embed its interface securely into Home Assistant.
 
 [:books: Read the full add-on documentation][docs]
+
+## Installation
+
+1. Go to your Home Assistant web UI, "Supervisor" > "Add-on Store", Click 3-dots menu at upper right > "Repositories" and add this repository URL: [https://github.com/vicfergar/addon-wave-sample](https://github.com/vicfergar/addon-wave-sample)
+1. Scroll down the page to find the new repository, and click the new add-on named "Wave Engine Sample"
+1. Click "Install" and give it a few minutes to finish downloading.
+1. Click "Start", give it a few seconds to spin up, and then click the "Open Web UI" button that appears.
 
 ## Contributing
 
