@@ -76,11 +76,7 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/vicfergar/addon-wave-sample.svg
 [commits]: https://github.com/vicfergar/addon-wave-sample/commits/master
 [contributors]: https://github.com/vicfergar/addon-wave-sample/graphs/contributors
-[discord-ha]: https://discord.gg/c5DvZ4e
-[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
-[discord]: https://discord.me/hassioaddons
 [docs]: https://github.com/vicfergar/addon-wave-sample/blob/master/wave-sample/DOCS.md
-[forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [vicfergar]: https://github.com/vicfergar
 [gitlabci-shield]: https://gitlab.com/vicfergar/addon-wave-sample/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/vicfergar/addon-wave-sample/pipelines
