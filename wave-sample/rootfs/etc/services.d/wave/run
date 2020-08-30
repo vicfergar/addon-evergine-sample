@@ -1,0 +1,10 @@
+#!/usr/bin/with-contenv bashio
+# ==============================================================================
+# Home Assistant Community Add-on: Wave Engine Sample
+# Runs the Wave Engine Sample server
+# ==============================================================================
+
+bashio::log.info "Starting Wave Engine Sample server..."
+
+cd /var/www
+exec dotnet Hass_Sample.Web.AspNetCore.dll
