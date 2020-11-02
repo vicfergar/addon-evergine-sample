@@ -18,7 +18,7 @@ Module.expectedDataFileDownloads++;
     } else {
       throw 'using preloaded data can only be done on a web page or in a web worker';
     }
-    var PACKAGE_NAME = 'bin/Debug/netstandard2.0//content.dat';
+    var PACKAGE_NAME = 'bin/Release/netstandard2.0//content.dat';
     var REMOTE_PACKAGE_BASE = 'content.dat';
     if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
       Module['locateFile'] = Module['locateFilePackage'];
@@ -147,10 +147,10 @@ Module['FS_createPath']('/', 'Content', true, true);
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
           }
-              Module['removeRunDependency']('datafile_bin/Debug/netstandard2.0//content.dat');
+              Module['removeRunDependency']('datafile_bin/Release/netstandard2.0//content.dat');
 
     };
-    Module['addRunDependency']('datafile_bin/Debug/netstandard2.0//content.dat');
+    Module['addRunDependency']('datafile_bin/Release/netstandard2.0//content.dat');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
@@ -171,6 +171,6 @@ Module['FS_createPath']('/', 'Content', true, true);
   }
 
  }
- loadPackage({"files":[{"filename":"/Content/02181b63-5a0e-46d1-9208-d92376ae33fb.wepmt","start":0,"end":2541,"audio":0},{"filename":"/Content/03201077-8203-456b-bfab-7fff68cfb905.weptx","start":2541,"end":5595229,"audio":0},{"filename":"/Content/0db59561-b3f5-444f-b5de-e62e3a5b42bf.weprl","start":5595229,"end":5595636,"audio":0},{"filename":"/Content/2622ab15-cd70-4710-8c31-96308e250cec.wepsc","start":5595636,"end":5602152,"audio":0},{"filename":"/Content/7d1e2792-2031-42bb-a67c-0dbd282be12a.wepsp","start":5602152,"end":5602288,"audio":0},{"filename":"/Content/9018edf8-ea96-4721-bf83-5561942432e0.wepsp","start":5602288,"end":5602424,"audio":0},{"filename":"/Content/cache.yaml","start":5602424,"end":5605078,"audio":0},{"filename":"/Content/d81d459c-c433-4ee3-bfe5-b45fbce12736.weptx","start":5605078,"end":5670858,"audio":0},{"filename":"/Content/daa1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5670858,"end":5760965,"audio":0},{"filename":"/Content/dbb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5760965,"end":5764416,"audio":0},{"filename":"/Content/dcb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5764416,"end":5769306,"audio":0},{"filename":"/Content/ddb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5769306,"end":5787496,"audio":0},{"filename":"/Content/deb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5787496,"end":5797915,"audio":0},{"filename":"/Content/df03a57c-8730-4db9-97c5-92e0afc77206.weptx","start":5797915,"end":6322627,"audio":0},{"filename":"/Content/dfb5efbf-33e9-4b56-836d-cb8ca4ca0c80.wepfx","start":6322627,"end":6324627,"audio":0},{"filename":"/Content/e35c59a9-26ab-4b4c-8210-4b1f21c31530.weprl","start":6324627,"end":6325034,"audio":0}],"remote_package_size":6325034,"package_uuid":"60d2572f-a1f9-4b72-94b8-2e1a70a7c0a0"});
+ loadPackage({"files":[{"filename":"/Content/02181b63-5a0e-46d1-9208-d92376ae33fb.wepmt","start":0,"end":2541,"audio":0},{"filename":"/Content/03201077-8203-456b-bfab-7fff68cfb905.weptx","start":2541,"end":5595229,"audio":0},{"filename":"/Content/0db59561-b3f5-444f-b5de-e62e3a5b42bf.weprl","start":5595229,"end":5595636,"audio":0},{"filename":"/Content/2622ab15-cd70-4710-8c31-96308e250cec.wepsc","start":5595636,"end":5602152,"audio":0},{"filename":"/Content/7d1e2792-2031-42bb-a67c-0dbd282be12a.wepsp","start":5602152,"end":5602288,"audio":0},{"filename":"/Content/9018edf8-ea96-4721-bf83-5561942432e0.wepsp","start":5602288,"end":5602424,"audio":0},{"filename":"/Content/cache.yaml","start":5602424,"end":5606502,"audio":0},{"filename":"/Content/d81d459c-c433-4ee3-bfe5-b45fbce12736.weptx","start":5606502,"end":5672282,"audio":0},{"filename":"/Content/daa1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5672282,"end":5762389,"audio":0},{"filename":"/Content/dbb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5762389,"end":5765840,"audio":0},{"filename":"/Content/dcb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5765840,"end":5770730,"audio":0},{"filename":"/Content/ddb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5770730,"end":5788920,"audio":0},{"filename":"/Content/deb1f60a-82ad-40fc-8fbb-7b85caa6de0a.wepfx","start":5788920,"end":5799339,"audio":0},{"filename":"/Content/df03a57c-8730-4db9-97c5-92e0afc77206.weptx","start":5799339,"end":6324051,"audio":0},{"filename":"/Content/dfb5efbf-33e9-4b56-836d-cb8ca4ca0c80.wepfx","start":6324051,"end":6326051,"audio":0},{"filename":"/Content/e35c59a9-26ab-4b4c-8210-4b1f21c31530.weprl","start":6326051,"end":6326458,"audio":0}],"remote_package_size":6326458,"package_uuid":"944ea7af-b10a-489d-9742-9637b08246c6"});
 
 })();
