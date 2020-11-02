@@ -1,22 +1,25 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.1
+ARG BUILD_FROM=hassioaddons/base:8.0.5
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
+# Set shell
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # Setup base
+# hadolint ignore=DL3003
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-        unzip=6.0-r7 \
+        unzip=6.0-r8 \
         wget=1.20.3-r1 \
     \
     && apk add --no-cache \
         lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r0 \
-        nginx=1.18.0-r0 \
+        nginx-mod-http-lua=1.18.0-r1 \
+        nginx=1.18.0-r1 \
     \
     && apk del --no-cache --purge .build-dependencies \
     && rm -fr \
         /etc/nginx
-
 # Copy root filesystem
 COPY rootfs /
 
