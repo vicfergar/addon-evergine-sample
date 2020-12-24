@@ -22,10 +22,6 @@ html {
         transform: translateY(-50%);
     }
 
-#wave-engine-canvas {
-    background-image: radial-gradient(#00000001, #00000033);
-}
-
 .progress {
     margin: 0 auto;
     width: 160px;

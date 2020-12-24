@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <linker>
-  <assembly fullname="Hass_Sample" />
-  <assembly fullname="Hass_Sample.Web" />
+  <assembly fullname="Floorplan3D" />
+  <assembly fullname="Floorplan3D.Web" />
 
   <assembly fullname="WaveEngine.Framework" />
   <assembly fullname="WaveEngine.Platform" />

@@ -6,10 +6,11 @@ Module['locateFile'] = function (base) {
 
 Module['setProgress'] = function (loadedBytes, totalBytes) {
     let percentage = Math.round((loadedBytes / totalBytes) * 100);
-    $('#loading-bar').children().css('width', percentage + '%');
+    var loadingBar = document.getElementById("loading-bar")
+    loadingBar.children[0].style.width = percentage + '%';
 
     if (percentage === 100) {
-        $('#loading-bar').addClass('progress-infinite');
+        loadingBar.classList.add("progress-infinite");
     }
 };
 
@@ -45,15 +46,17 @@ let App = {
         this.Program.UpdateCanvasSize(this.mainCanvasId);
     },
     hideSplash: function () {
-        $('#splash').fadeOut(function () { $(this).remove(); });
+        let splash = document.getElementById("splash");
+        //splash.fadeOut(function () { $(this).remove(); });
+        splash.remove();
     },
     updateCanvasSize: function () {
         let devicePixelRatio = window.devicePixelRatio || 1;
-        $(`#${this.mainCanvasId}`)
-            .css('width', window.innerWidth + 'px')
-            .css('height', window.innerHeight + 'px')
-            .prop('width', window.innerWidth * devicePixelRatio)
-            .prop('height', window.innerHeight * devicePixelRatio);
+        let canvas = document.getElementById(this.mainCanvasId);
+        canvas.style.width = window.innerWidth + 'px';
+        canvas.style.height = window.innerHeight + 'px';
+        canvas.width = window.innerWidth * devicePixelRatio;
+        canvas.height = window.innerHeight * devicePixelRatio;
     },
     warnUnsupportedBrowser: function () {
         App.hideSplash();
@@ -88,14 +91,14 @@ let WaveEngine = {
     }
 };
 
-let isWebGL2Supported = function () {
+let isWebGLSupported = function () {
     // Some browsers (e.g. Safari on macOS) pass this test, although its implementation it's not fully functional
     var elem = document.createElement('canvas');
-    return !!(elem.getContext && elem.getContext('webgl2'));
+    return !!(elem.getContext && elem.getContext('webgl'));
 }
 
 // Will do the heavy lifting only on supported browsers
-if (isWebGL2Supported()) {
+if (isWebGLSupported()) {
     // Add script references
     var contentTag = document.createElement('script');
     contentTag.src = "waveengine/content.js";
@@ -110,6 +113,6 @@ if (isWebGL2Supported()) {
     document.head.appendChild(contentTag);
     document.head.appendChild(dotnetTag);
 } else {
-    console.log("WebGL2 is NOT supported on this browser");
+    console.log("WebGL is NOT supported on this browser");
     $(document).ready(App.warnUnsupportedBrowser);
 }
