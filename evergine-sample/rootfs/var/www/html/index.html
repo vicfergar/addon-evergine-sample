@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>EvergineHassSample.Web</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow" />
+  <link rel="stylesheet" href="styles.css" />
+  <script type="text/javascript" src="evergine.js"></script>
+</head>
+
+<body class="dark">
+  <canvas id="evergine-canvas" oncontextmenu="return false;" tabindex="1"></canvas>
+  <div id="splash">
+    <div id="splash-content">
+      <div class="logo-container">
+        <img class="logo-img" alt="Evergine logo" />
+        <div class="separator"></div>
+      </div>
+      <div id="loading-bar" class="progress">
+        <div>
+          <strong>Loading...</strong>
+          <div class="loading-bar-container">
+            <div id="loading-bar-percentage" class="progress-bar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- We first configure javascript evergine functions on evergine.js-->
+  <script type="text/javascript">
+    var Module = typeof Module !== "undefined" ? new EvergineModule(Module) : new EvergineModule();
+    var app = new App(
+      "evergine-canvas",
+      "EvergineHassSample.Web",
+      "EvergineHassSample.Web.Program",
+      Module);
+  </script>
+
+  <!-- Then we load web assembly code -->
+  <script src="_framework/blazor.webassembly.js" autostart="false"></script>
+  <!-- After it, start loading the assets into the vfs -->
+  <script src="assets.js"></script>
+  <!-- Finally, run wave when all assets are loaded -->
+  <script type="text/javascript">
+
+    function waitAndRun() {
+      if (areAllAssetsLoaded()) {
+        console.log("Running...");
+        app.run();
+      } else {
+        setTimeout(waitAndRun, 100);
+      }
+    }
+
+    Blazor.start().then(function () {
+      waitAndRun();
+    });
+  </script>
+</body>
+
+</html>

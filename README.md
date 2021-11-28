@@ -1,4 +1,4 @@
-# Home Assistant Community Add-on: Wave Engine Sample
+# Home Assistant Community Add-on: Evergine Sample
 
 [![GitHub Release][releases-shield]][releases]
 ![Project Stage][project-stage-shield]
@@ -13,15 +13,15 @@
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
-Sample add-on that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview.
+Sample add-on that hosts a WASM WebGL wiewer made with [Evergine](https://evergine.com/).
 
 ## About
 
-This add-on is sample that hosts a WebGL2 sample application made with Wave Engine 3.0 Preview.
+It is designed to be used as a startup structure for Add-ons based on [Evergine](https://evergine.com/).
 
-It is designed to be used as a startup structure for Add-ons based on [Wave Engine](https://waveengine.net/).
+Using Evergine brings the possibility of developing web 3D graphics apps integrated within Home Assistant.
 
-Using Wave Engine brings the possibility of developing web graphics apps integrated within Home Assistant.
+This add-on is still under development.
 
 This add-on is using Ingress to embed its interface securely into Home Assistant.
 
@@ -29,10 +29,14 @@ This add-on is using Ingress to embed its interface securely into Home Assistant
 
 ## Installation
 
-1. Go to your Home Assistant web UI, "Supervisor" > "Add-on Store", Click 3-dots menu at upper right > "Repositories" and add this repository URL: [https://github.com/vicfergar/addon-wave-sample](https://github.com/vicfergar/addon-wave-sample)
-1. Scroll down the page to find the new repository, and click the new add-on named "Wave Engine Sample"
+1. Go to your Home Assistant web UI, "Supervisor" > "Add-on Store",
+   Click 3-dots menu at upper right > "Repositories" and add this
+   repository URL: [https://github.com/vicfergar/addon-evergine-sample](https://github.com/vicfergar/addon-evergine-sample)
+1. Scroll down the page to find the new repository, and click the
+   new add-on named "Evergine Sample"
 1. Click "Install" and give it a few minutes to finish downloading.
-1. Click "Start", give it a few seconds to spin up, and then click the "Open Web UI" button that appears.
+1. Click "Start", give it a few seconds to spin up, and then click
+   the "Open Web UI" button that appears.
 
 ## Contributing
 
@@ -59,7 +63,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2020 Victor Ferrer
+Copyright (c) 2021 Victor Ferrer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -83,19 +87,19 @@ SOFTWARE.
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
-[commits-shield]: https://img.shields.io/github/commit-activity/y/vicfergar/addon-wave-sample.svg
-[commits]: https://github.com/vicfergar/addon-wave-sample/commits/master
-[contributors]: https://github.com/vicfergar/addon-wave-sample/graphs/contributors
-[docs]: https://github.com/vicfergar/addon-wave-sample/blob/master/wave-sample/DOCS.md
+[commits-shield]: https://img.shields.io/github/commit-activity/y/vicfergar/addon-evergine-sample.svg
+[commits]: https://github.com/vicfergar/addon-evergine-sample/commits/main
+[contributors]: https://github.com/vicfergar/addon-evergine-sample/graphs/contributors
+[docs]: https://github.com/vicfergar/addon-evergine-sample/blob/main/evergine-sample/DOCS.md
 [vicfergar]: https://github.com/vicfergar
-[gitlabci-shield]: https://gitlab.com/vicfergar/addon-wave-sample/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/vicfergar/addon-wave-sample/pipelines
+[gitlabci-shield]: https://gitlab.com/vicfergar/addon-evergine-sample/badges/main/pipeline.svg
+[gitlabci]: https://gitlab.com/vicfergar/addon-evergine-sample/pipelines
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/vicfergar/addon-wave-sample/issues
-[license-shield]: https://img.shields.io/github/license/vicfergar/addon-wave-sample.svg
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
+[issue]: https://github.com/vicfergar/addon-evergine-sample/issues
+[license-shield]: https://img.shields.io/github/license/vicfergar/addon-evergine-sample.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-production%20ready-brightgreen.svg
 [reddit]: https://reddit.com/r/homeassistant
-[releases-shield]: https://img.shields.io/github/release/vicfergar/addon-wave-sample.svg
-[releases]: https://github.com/vicfergar/addon-wave-sample/releases
+[releases-shield]: https://img.shields.io/github/release/vicfergar/addon-evergine-sample.svg
+[releases]: https://github.com/vicfergar/addon-evergine-sample/releases
 [repository]: https://github.com/hassio-addons/repository
